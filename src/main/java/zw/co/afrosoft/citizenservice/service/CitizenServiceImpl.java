@@ -25,4 +25,10 @@ public class CitizenServiceImpl implements CitizenService{
         List<Citizen> citizens = citizenRepository.findByVaccinationCenterId(id);
         return citizens;
     }
+
+    @Override
+    public Citizen add(Citizen newCitizen) {
+        Citizen citizen = citizenRepository.save(newCitizen);
+        return citizen;
+    }
 }

@@ -10,4 +10,6 @@ public interface CitizenService {
     List<Citizen> getAllCitizens();
 
     List<Citizen> getById(int id);
+
+    Citizen add(Citizen newCitizen);
 }
